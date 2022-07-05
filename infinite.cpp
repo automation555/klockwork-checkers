@@ -2,8 +2,16 @@
 
 int buffer[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
+
+
+
  void infinite_loop(int a)
  {
+	  std::string s = "...";
+    if (s.find("Hello World") == std::string::npos) { /* do something */ }
+
+    absl::string_view a = "...";
+    if (absl::string_view::npos != a.find("Hello World")) { /* do something */ }
         int i=0;
         while (true) {
           if (i >= 10) {
